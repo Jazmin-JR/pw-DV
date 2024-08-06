@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFDFD;
+    padding: 1.2rem 1rem 0rem  1rem;
+    font-family: 'Jomhuria', sans-serif; 
+    height: 70px;
+  }
+  
+  .logo img {
+    height: 110px;
+    margin-top: -1rem;
+    margin-left: -1.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    
+
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    font-family: 'Jomhuria', sans-serif;
+  }
+  
+  .nav-links a:hover {
+    color: #60989c;
+  }
+  
+  /* Estilos para el botón de teléfono */
+.phone-btn {
+  margin-left: -375px; /* Espacio entre el botón y los enlaces de navegación */
+  margin-top: -.5rem;
+  
+}
+
+.phone-button {
+  background-color: #60989c; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 10px; /* Espaciado interno */
+  border-radius: 50%; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  display: flex; /* Alinear contenido horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  font-family: 'Jomhuria', sans-serif;
+  font-size: 2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+
+}
+
+.phone-btn .icon-nav{
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  margin-left: .5rem;
+}
+.phone-button:hover {
+  background-color: #12597c; /* Cambiar color de fondo al pasar por encima */
+}
+
+.phone-button svg {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}

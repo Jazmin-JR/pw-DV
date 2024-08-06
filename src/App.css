@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+body {
+  background-color: #F4F4F4;
+  margin: 0;
+  font-family: 'Jomhuria', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+section:nth-of-type(even) {
+  background-color: #ececec;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+#inicio .inicio-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+#nosotros .nosotros-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#nosotros .nosotros-info,
+#nosotros .nosotros-extra {
+  flex: 1;
+}
+
+#nosotros .nosotros-info img,
+#nosotros .nosotros-extra img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+
+/*Buttones de servicios*/
+.contact-buttons-s {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-btn-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #B2DCDF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.contact-btn-s:hover {
+  background-color: #76bbc7;
+}
+
+.contact-btn-s svg {
+  margin-right: 2-rem;
+}
+
+.contact-buttons-s button {
+  font-family: 'Jomhuria', sans-serif;
+  color: #58a3a9;
+  font-size: 2rem; 
+}
+
+
+
+/*Button Phone*/
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #B2DCDF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 16rem;
+  height: 2.5rem;
+}
+
+.contact-btn:hover {
+  background-color: #4fa6d3;
+}
+
+.contact-btn svg, .contact-btn-w svg {
+  margin-right: 0.5rem;
+}
+
+.contact-buttons button {
+  font-family: 'Jomhuria', sans-serif;
+  color: #f5f6f7;
+  font-size: 2rem; 
+}
+/*Button Whatsapp*/
+.more-info-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.contact-btn-w{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #B2DCDF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 16rem;
+  height: 2.5rem;
+}
+.more-info-container button{
+  font-family: 'Jomhuria', sans-serif;
+  color: #f5f6f7;
+  font-size: 2rem; 
+}
+.more-info-btn:hover {
+  background-color: #4fa6d3;
+}
+
+.contact-btn-w .icon-btn-w{
+  width: 2rem;
+  height: 2rem;
+}
+.extra-image {
+  border-radius: 7px;
+}
+
+#servicios .servicios-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+}
+
+#servicios .card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#servicios .card-image {
+  width: 220px;
+  height: 230px;
+  display: block;
+}
+
+#servicios .card-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#servicios .card-button:hover {
+  background-color: #4fa6d3;
+}
+
+#servicios .card-icon {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 10px;
+}
+
+#servicios .card-title {
+  font-family: 'Oregano', sans-serif;
+  margin: 0.1rem 0;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+#servicios .card-description {
+  font-family: 'Oregano', sans-serif;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+#servicios .card-button {
+  padding: 0.5rem 1rem;
+  background-color: #97BDBF;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000; 
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+#servicios .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+#servicios .section-title {
+  font-family: 'Jomhuria', sans-serif;
+  color: #597E8D;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: -3rem;
+}
+
+#servicios .section-subtitle {
+  font-family: 'Jomhuria', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#contacto {
+  background-color: #59A5AB;
+  color: white;
+  padding: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-rectangle {
+  background-color: #59A5AB;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contacto-title {
+  font-family: 'Oregano', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+.contact-column {
+  width: 30%;
+}
+
+.contact-column h3 {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.contact-column-image {
+  width: 250px;
+  margin-top: -2rem;
+  height: auto;
+  margin-bottom: 1rem;
+  
+}
+
+.contact-column-image-mp {
+  width: 230px;
+  margin-top: -1.6rem;
+  height: auto;
+  margin-bottom: 1rem;
+  
+}
+
+.author-info p{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contacto-contacto-title {
+  font-family: 'Jomhuria', sans-serif;
+  color: #333;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contacto-description {
+  font-family: 'Oregano', sans-serif;
+  color: #666;
+  font-size: 2.5rem;
+}
+
+.contacto-contacto-description {
+  font-family: 'Oregano', sans-serif;
+  color: #000000;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: justify;
+  margin-top: -1rem;
+}
+
+.contacto-navigation-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.contacto-navigation-list li {
+  margin-bottom: 1rem;
+}
+
+.contacto-navigation-link {
+  font-family: 'Oregano', sans-serif;
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.contacto-navigation-link:hover {
+  color: #60989c;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.contacto-column-title {
+  font-family: 'Oregano', sans-serif;
+  color: #f5f6f7;
+  font-size: 2.5rem;
+  margin-left: -0.3rem;
+}
+
+.contacto-subtitle {
+  font-family: 'Oregano', sans-serif;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-form {
+  font-family: 'Oregano', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contacto-input {
+  font-family: 'Oregano', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contacto-btn {
+  font-family: 'Oregano', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #59A5AB;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  #nosotros .nosotros-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #servicios .servicios-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-columns {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .contact-column {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
