@@ -78,15 +78,35 @@
   margin-right: 8px; /* Espacio entre el icono y el texto */
 }
 
-@media (max-width: 768px) {
-  .logo img {
-      height: 50px; /* Ajustar el tamaño del logo para pantallas más pequeñas */
-  }
+@media (orientation: landscape) and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+}
 
-  .nav-links {
-      font-size: 1.2rem;
-      justify-content: center; /* Centrar los enlaces en pantallas más pequeñas */
-  }
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 6px;
+}
+
+.nav-links li {
+    margin: 0 0.5rem;
+}
+
+.phone-btn {
+    margin-left: 0;
+}
+
+.phone-button {
+    height: 2.5rem;
+    width: 2.5rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -131,3 +151,4 @@
     height: .5rem;
 }
 }
+
