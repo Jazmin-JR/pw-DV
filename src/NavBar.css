@@ -77,3 +77,57 @@
 .phone-button svg {
   margin-right: 8px; /* Espacio entre el icono y el texto */
 }
+
+@media (max-width: 768px) {
+  .logo img {
+      height: 50px; /* Ajustar el tamaño del logo para pantallas más pequeñas */
+  }
+
+  .nav-links {
+      font-size: 1.2rem;
+      justify-content: center; /* Centrar los enlaces en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; /* Apilar elementos verticalmente en pantallas muy pequeñas */
+    padding: 0.5rem; /* Ajustar el padding para pantallas muy pequeñas */
+    height: 3.4rem; /* Ajustar la altura */
+}
+
+.logo img {
+    margin-top: -.5rem;
+    height: 40px; /* Ajustar el tamaño del logo para pantallas muy pequeñas */
+}
+
+.nav-links {
+    margin-top: -.9rem;
+    margin-left: -4rem;
+    flex-direction: row; /* Mantener enlaces en una fila */
+    justify-content: center; /* Centrar los enlaces */
+    width: 100%; /* Ancho completo para evitar desbordamientos */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+}
+
+.nav-links li {
+    margin: 0 0.5rem; /* Ajustar el margen entre enlaces */
+}
+
+.nav-links a {
+    font-size: 1rem; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+}
+
+.phone-button {
+    margin-top: -1.9rem;
+    margin-left: 43rem;
+    font-size: 1rem; /* Reducir el tamaño de la fuente del botón */
+    height: 1rem; /* Reducir el tamaño del botón */
+    width: 1rem; /* Reducir el tamaño del botón */
+}
+
+.phone-btn .icon-nav {
+    width: .5rem; /* Ajustar el tamaño del icono */
+    height: .5rem;
+}
+}
